@@ -1,0 +1,40 @@
+version: "2.0"
+
+stories:
+- story: greet
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: ask_for_time
+  steps: 
+  - intent: greet 
+  - action: utter_greet
+  - intent: find_time_zone   # what time now
+  - action: utter_ask_location #which city
+  - intent: find_time_zone_location  #i want know in london
+  - action: utter_finding_time_zone #waiting
+  - action: action_show_time_zone
+  - intent: thanks
+  - action: utter_you_are_welcome 
+  - action: utter_goodbye
+- story: bot_challenge
+  steps: 
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- story: ask_for_short_time
+  steps: 
+  - intent: greet 
+  - action: utter_greet
+  - intent: find_time_zone   # what time now
+  - action: utter_ask_location #which city
+  - intent: city_info # london
+  - action: utter_finding_time_zone #waiting
+  - action: action_show_time_zone
+  - intent: thanks
+  - action: utter_you_are_welcome 
+  - action: utter_goodbye
+  

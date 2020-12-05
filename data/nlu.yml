@@ -1,0 +1,84 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: bot_challenge
+  examples: |
+    - are you a human?
+    - are you able to do it?
+    - will you do it?
+    - can you do it?
+    
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good bye
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: find_time_zone
+  examples: |
+    - could you tell me the time?
+    - may i know the time zone ?
+    - may i know the time?
+    - what is the time now?
+    - could you say the time?
+    - could you please say the time?
+    - can you tell what's the time now? 
+    - i need to find the time zone?
+    - can you find the time zone?
+    - what time is it?
+
+- intent: find_time_zone_location
+  examples: |
+    - what is the time zone of [london](city)?
+    - what is the time zone of this [america](city)?
+    - do you know the time zone of [Delhi](city)?
+    - can you say the time zone of [britain](city)?
+    - do you know the time zone in [america](city)?
+    - what is the time zone in [newyork](city)?
+    - i want to know the time zone of [goa](city)
+    - i want to know the time zone of [cocchin](city)
+    - i want time zone of [assam](city)
+    - i want time zone of [cocchin](city)
+
+- intent: city_info
+  examples: |
+    - [Delhi](city)
+    - [mumbai](city)
+    - [london](city)
+    - [goa](city)
+    - [britain](city)
+    - [haryana](city)
+    - [rajasthan](city)
+    - [cocchin](city)
+    - [britain](city)
+- intent: thanks
+  examples: |
+    - thank you
+    - thanks
+    - great thanks
+
+    
